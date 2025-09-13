@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-estudiante',
@@ -8,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class EstudianteComponent {
 
+    constructor(private router: Router){}
+  
+  volver(): void{
+    this.router.navigate(['']);
+  }
 }
