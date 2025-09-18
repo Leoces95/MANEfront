@@ -1,3 +1,14 @@
 <p>estudiante works!</p>
 
 <button (click)="volver()" >volver</button>
+
+<form action="">
+    <label for="name">nombre </label>
+    <input type="text" placeholder="digite su nombre">
+</form>
+
+<p>DATOS DEL ESTUDIANTE</p>
+<strong>id: </strong> {{estudiante?.id}} <br>
+<strong>nombre: </strong> {{estudiante?.nombre}} <br>
+<strong>apellido: </strong> {{estudiante?.apellido}} <br>
+<strong>telefono: </strong> {{estudiante?.telefono}}
